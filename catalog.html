@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зона Шопинга</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+
+  <div class="js-- body__background"></div>
+
+  <div class="wrapper">
+
+    <!-- main-banner -->
+
+    <aside class="main-banner">
+      <a class="main-banner__link" href="#">
+      </a>
+    </aside>
+
+    <!-- CONTAINER -->
+
+    <div class="container">
+
+      <!-- HEADER -->
+
+      <header class="header">
+        <div class="header-logo">
+          <a class="header-logo__link" href="index.html" title="Торговый центр Зона Шопинга">
+            <img class="header-logo__img" src="img/logo.png" alt="Торговый центр Зона Шопинга">
+          </a>
+        </div>
+
+        <hr class="header-line">
+        <!-- sb -->
+
+        <aside class="js-- header-sb">
+
+          <!-- scroll-top -->
+
+          <div class="sb-item _top-l">
+            <div class="js-- sb-item__button-t" title="Вверх">
+              <i class="sb-item__icon _top"></i>
+            </div>
+          </div>
+
+          <!-- menu-button-->
+
+          <div class="sb-item _menu">
+            <div class="js-- sb-item__button _menu" title="Меню">
+              <i class="sb-item__icon _menu"></i>
+            </div>
+          </div>
+
+          <!-- logo-->
+
+          <div class="sb-item _logo">
+            <a class="sb-item__link" href="index.html">
+              <img class="sb-item__img-logo" src="img/logo.png" alt="Торговый центр Зона Шопинга" title="Торговый центр Зона Шопинга">
+            </a>
+          </div>
+
+          <!-- search-->
+
+          <div class="sb-item _search _fix-none">
+            <div class="js-- sb-item__button _search" title="Поиск">
+              <i class="sb-item__icon _search"></i>
+            </div>
+            <div class="sb-modal _search">
+              <form class="sb-modal-form _search" action="#">
+                <div class="sb-modal__block-search">
+                  <input class="sb-modal__input" type="text" placeholder="Название товара">
+                </div>
+                <input class="sb-modal__button _search" type="submit" value="search" title="Поиск">
+              </form>
+            </div>
+          </div>
+
+          <!-- shop_ -->
+
+          <div class="sb-item _fix-none">
+            <div class="js-- sb-item__button" title="Магазины">
+              <i class="sb-item__icon _shop"></i>
+            </div>
+            <div class="sb-modal _center _shop">
+              <div class="sb-modal-container">
+                <a class="sb-modal-c__link" href="#">
+                  Показать все магазины
+                </a>
+                <form class="sb-modal-form _shop" action="#">
+                  <div class="sb-modal__block-search _shop">
+                    <input class="sb-modal__input _shop" type="text" placeholder="Введите название магазина">
+                  </div>
+                  <input class="sb-modal__button _search-shop" type="submit" value="search" title="Поиск">
+                </form>
+                <div class="sb-modal-selr _sb">
+                  <span class="sb-modal-selr__selected">Мои любимые магазины</span>
+                  <select class="js-- sb-modal-selr__select">
+                    <option class="sb-modal-selr__first">Мои любимые магазины</option>
+                    <option class="sb-modal-selr__option">Гучик</option>
+                    <option class="sb-modal-selr__option">Джован</option>
+                    <option class="sb-modal-selr__option">Бруклиш</option>
+                  </select>
+                </div>
+              </div>
+              <div class="js-- sb-modal__close"></div>
+            </div>
+          </div>
+
+          <!-- like -->
+
+          <div class="sb-item _fix-none">
+            <div class="js-- sb-item__button" title="Выбранные">
+              <i class="sb-item__icon _like" data-number="30">
+              </i>
+            </div>
+            <div class="sb-modal _center _like">
+
+              <!-- n-like -->
+              <input id="modal-radio-nl" class="sb-modal__radio" type="radio" name="like" checked>
+              <div class="sb-modal-container">
+                <div class="sb-modal-c__caption">
+                  Выбранные Вами товары:
+                </div>
+                <div class="sb-modal-goods _none">
+                  В настоящий момент у Вас нет выбранных товаров
+                </div>
+                <label for="modal-radio-l" class="sb-modal-goods _none">
+                  Второе окно
+                </label>
+              </div>
+
+              <!-- y-like -->
+              <input id="modal-radio-l" class="sb-modal__radio" type="radio" name="like">
+              <div class="sb-modal-container">
+                <div class="sb-modal-c__caption">
+                  Выбранные Вами товары:
+                </div>
+                <div class="goods-slider">
+
+                  <div class="swiper-button-prev sb-like-prev"></div>
+                  <div class="swiper-button-next sb-like-next"></div>
+
+                  <div class="js-- sb-like-swiper swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide _g">
+
+                        <div class="swiper-slide__block">
+                          <a class="swiper-slide__link" href="#">
+                            <div class="swiper-slide__box-img">
+                              <img class="swiper-slide__img" src="img/goods1.png" alt="Платье">
+                            </div>
+                            <div class="swiper-slide__price">
+                              2&nbsp;780
+                            </div>
+                            <div class="swiper-slide__name">
+                              Платье вечернее Гучарелос
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide _g">
+
+                        <div class="swiper-slide__block">
+                          <a class="swiper-slide__link" href="#">
+                            <div class="swiper-slide__box-img">
+                              <img class="swiper-slide__img" src="img/goods2.png" alt="Платье">
+                            </div>
+                            <div class="swiper-slide__price">
+                              2&nbsp;347
+                            </div>
+                            <div class="swiper-slide__name">
+                              Платье вечернее
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide _g">
+
+                        <div class="swiper-slide__block">
+                          <a class="swiper-slide__link" href="#">
+                            <div class="swiper-slide__box-img">
+                              <img class="swiper-slide__img" src="img/goods3.png" alt="Платье">
+                            </div>
+                            <div class="swiper-slide__price">
+                              2&nbsp;347
+                            </div>
+                            <div class="swiper-slide__name">
+                              Платье вечернее
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide _g">
+
+                        <div class="swiper-slide__block">
+                          <a class="swiper-slide__link" href="#">
+                            <div class="swiper-slide__box-img">
+                              <img class="swiper-slide__img" src="img/goods4.png" alt="Платье">
+                            </div>
+                            <div class="swiper-slide__price">
+                              2&nbsp;347
+                            </div>
+                            <div class="swiper-slide__name">
+                              Платье вечернее
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="sb-modal-c__link _letter" href="#">
+                  Показать все
+                </a>
+              </div>
+
+
+              <div class="js-- sb-modal__close"></div>
+            </div>
+          </div>
+
+          <!-- label -->
+
+          <div class="sb-item _fix-none">
+            <div class="js-- sb-item__button" title="Местоположение">
+              <i class="sb-item__icon _label"></i>
+            </div>
+            <div class="sb-modal _center _label">
+              <div class="sb-modal-container">
+                <div class="sb-modal-c__caption">
+                  Ваш населенный пункт:
+                </div>
+                <div class="sb-modal-c__allotted">
+                  Приднестровье, Тирасполь*
+                </div>
+                <a class="sb-modal-c__link" href="#">
+                  Показать товары во всех регионах
+                </a>
+                <hr class="sb-modal-c__line">
+                <div class="sb-modal-c__caption">
+                  Изменить региональные настройки:
+                </div>
+                <div class="sb-modal-selr _sb">
+                  <span class="sb-modal-selr__selected">Выберите страну</span>
+                  <select class="js-- sb-modal-selr__select">
+                    <option class="sb-modal-selr__first">Выберите страну</option>
+                    <option class="sb-modal-selr__option">Молдавия</option>
+                    <option class="sb-modal-selr__option">Россия</option>
+                    <option class="sb-modal-selr__option">Украина</option>
+                  </select>
+                </div>
+                <div class="sb-modal-selr _sb">
+                  <span class="sb-modal-selr__selected">Выберите город</span>
+                  <select class="js-- sb-modal-selr__select">
+                    <option class="sb-modal-selr__first">Выберите город</option>
+                    <option class="sb-modal-selr__option">Тирасполь</option>
+                    <option class="sb-modal-selr__option">Кишинев</option>
+                    <option class="sb-modal-selr__option">Одесса</option>
+                  </select>
+                </div>
+                <input class="sb-modal-c__button _label" type="button" value="Сохранить">
+                <hr class="sb-modal-c__line">
+                <div class="sb-modal-c__comment">
+                  Для Вашего удобства мы исключили показ товаров, которые не продаются или не доставляются в Ваш населенный пункт. Вы всегда можете изменить эти настройки.
+                </div>
+              </div>
+              <div class="js-- sb-modal__close"></div>
+            </div>
+          </div>
+
+          <!-- letter -->
+
+          <div class="sb-item _fix-none">
+            <div class="js-- sb-item__button" title="Оповещения">
+              <i class="sb-item__icon _letter" data-number="15">
+              </i>
+            </div>
+            <div class="sb-modal _center _letter">
+              <div class="sb-modal-container">
+                <div class="sb-modal-c__caption">
+                  Оповещения:
+                </div>
+                <a class="modal-row" href="#">
+                  <div class="modal-row__text _first">Личные сообщения</div>
+                  <div class="modal-row__text _center"></div>
+                  <div class="modal-row__text _last _c">5</div>
+                </a>
+                <a class="modal-row" href="#">
+                  <div class="modal-row__text _first">Сообщения от администрации</div>
+                  <div class="modal-row__text _center"></div>
+                  <div class="modal-row__text _last">0</div>
+                </a>
+                <a class="modal-row" href="#">
+                  <div class="modal-row__text _first">Подписка на товары</div>
+                  <div class="modal-row__text _center"></div>
+                  <div class="modal-row__text _last _c">24</div>
+                </a>
+                <a class="modal-row" href="#">
+                  <div class="modal-row__text _first">Совершена покупка</div>
+                  <div class="modal-row__text _center"></div>
+                  <div class="modal-row__text _last _c">1</div>
+                </a>
+                <a class="modal-row" href="#">
+                  <div class="modal-row__text _first">Добавлены отзывы</div>
+                  <div class="modal-row__text _center"></div>
+                  <div class="modal-row__text _last">0</div>
+                </a>
+                <a class="modal-row" href="#">
+                  <div class="modal-row__text _first">Новые магазины</div>
+                  <div class="modal-row__text _center"></div>
+                  <div class="modal-row__text _last">0</div>
+                </a>
+                <a class="sb-modal-c__link _letter" href="#">Показать все оповещения</a>
+              </div>
+              <div class="js-- sb-modal__close"></div>
+            </div>
+          </div>
+
+          <!-- basket -->
+
+          <div class="sb-item _fix-none">
+            <div class="js-- sb-item__button" title="Корзина">
+              <i class="sb-item__icon _basket" data-number="30">
+              </i>
+            </div>
+            <div class="sb-modal _center _basket">
+
+              <!-- n-goods -->
+              <input id="modal-radio-ng" class="sb-modal__radio" type="radio" name="basket" checked>
+              <div class="sb-modal-container ">
+                <div class="sb-modal-goods _none _basket">
+                  В Вашей корзине пока пусто
+                </div>
+                <hr class="sb-modal-c__line">
+                <div class="sb-modal-c__caption">
+                  Недавно Вы просматривали это:
+                </div>
+                <div class="goods-slider">
+
+                  <div class="swiper-button-prev sb-nbasket-prev"></div>
+                  <div class="swiper-button-next sb-nbasket-next"></div>
+
+                  <div class="js-- sb-nbasket-swiper swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide _g">
+
+                        <div class="swiper-slide__block">
+                          <a class="swiper-slide__link" href="#">
+                            <div class="swiper-slide__box-img">
+                              <img class="swiper-slide__img" src="img/goods1.png" alt="Платье">
+                            </div>
+                            <div class="swiper-slide__price">
+                              2&nbsp;780
+                            </div>
+                            <div class="swiper-slide__name">
+                              Платье вечернее Гучарелос
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide _g">
+
+                        <div class="swiper-slide__block">
+                          <a class="swiper-slide__link" href="#">
+                            <div class="swiper-slide__box-img">
+                              <img class="swiper-slide__img" src="img/goods2.png" alt="Платье">
+                            </div>
+                            <div class="swiper-slide__price">
+                              2&nbsp;347
+                            </div>
+                            <div class="swiper-slide__name">
+                              Платье вечернее
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide _g">
+
+                        <div class="swiper-slide__block">
+                          <a class="swiper-slide__link" href="#">
+                            <div class="swiper-slide__box-img">
+                              <img class="swiper-slide__img" src="img/goods3.png" alt="Платье">
+                            </div>
+                            <div class="swiper-slide__price">
+                              2&nbsp;347
+                            </div>
+                            <div class="swiper-slide__name">
+                              Платье вечернее
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide _g">
+
+                        <div class="swiper-slide__block">
+                          <a class="swiper-slide__link" href="#">
+                            <div class="swiper-slide__box-img">
+                              <img class="swiper-slide__img" src="img/goods4.png" alt="Платье">
+                            </div>
+                            <div class="swiper-slide__price">
+                              2&nbsp;347
+                            </div>
+                            <div class="swiper-slide__name">
+                              Платье вечернее
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="sb-modal-c__link _letter" href="#">
+                  Показать все, что просматривалось раннее
+                </a>
+                <label for="modal-radio-g" class="sb-modal-goods _none">
+                  Второе окно
+                </label>
+              </div>
+
+              <!-- y-goods -->
+              <input id="modal-radio-g" class="sb-modal__radio" type="radio" name="basket">
+              <div class="sb-modal-container">
+                <div class="sb-modal-c__caption _basket" data-content="4">
+                  Моя корзина:
+                </div>
+                <div class="goods-slider">
+
+                  <div class="swiper-button-prev sb-basket-prev"></div>
+                  <div class="swiper-button-next sb-basket-next"></div>
+
+                  <div class="js-- sb-basket-swiper swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide _g">
+
+                        <div class="swiper-slide__block">
+                          <a class="swiper-slide__link" href="#">
+                            <div class="swiper-slide__box-img">
+                              <img class="swiper-slide__img" src="img/goods1.png" alt="Платье">
+                            </div>
+                            <div class="swiper-slide__price">
+                              2&nbsp;780
+                            </div>
+                            <div class="swiper-slide__name">
+                              Платье вечернее Гучарелос
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide _g">
+
+                        <div class="swiper-slide__block">
+                          <a class="swiper-slide__link" href="#">
+                            <div class="swiper-slide__box-img">
+                              <img class="swiper-slide__img" src="img/goods2.png" alt="Платье">
+                            </div>
+                            <div class="swiper-slide__price">
+                              2&nbsp;347
+                            </div>
+                            <div class="swiper-slide__name">
+                              Платье вечернее
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide _g">
+
+                        <div class="swiper-slide__block">
+                          <a class="swiper-slide__link" href="#">
+                            <div class="swiper-slide__box-img">
+                              <img class="swiper-slide__img" src="img/goods3.png" alt="Платье">
+                            </div>
+                            <div class="swiper-slide__price">
+                              2&nbsp;347
+                            </div>
+                            <div class="swiper-slide__name">
+                              Платье вечернее
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+                      <div class="swiper-slide _g">
+
+                        <div class="swiper-slide__block">
+                          <a class="swiper-slide__link" href="#">
+                            <div class="swiper-slide__box-img">
+                              <img class="swiper-slide__img" src="img/goods4.png" alt="Платье">
+                            </div>
+                            <div class="swiper-slide__price">
+                              2&nbsp;347
+                            </div>
+                            <div class="swiper-slide__name">
+                              Платье вечернее
+                            </div>
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input class="sb-modal-c__button _basket" type="button" value="Оформить заказ">
+
+              </div>
+              <div class="js-- sb-modal__close"></div>
+
+
+            </div>
+          </div>
+
+          <!-- lang -->
+
+          <div class="sb-item _lang _fix-none">
+            <div class="js-- sb-item__button _lang _lang _f" title="Валюта и язык">
+              <i class="sb-item__icon _lang _lang-ru" data-content="&#8381;"></i>
+            </div>
+            <div class="sb-modal _center _lang">
+              <div class="sb-modal-container">
+                <div class="sb-modal-c__caption">
+                  В какой валюте показывать цену за товар:
+                </div>
+                <div class="sb-modal-selr _sb">
+                  <span class="sb-modal-selr__selected _currency">&#8381; RUB</span>
+                  <select class="js-- sb-modal-selr__select _currency">
+                    <option class="sb-modal-selr__option" value="&#8381;">&#8381; RUB</option>
+                    <option class="sb-modal-selr__option" value="&#36;">&#36; USD</option>
+                    <option class="sb-modal-selr__option" value="&#8364;">&#8364; EUR</option>
+                    <option class="sb-modal-selr__option" value="&#8372;">&#8372; UAN</option>
+                    <option class="sb-modal-selr__option" value="R">RUP PMR</option>
+                    <option class="sb-modal-selr__option" value="L">L MDL</option>
+                  </select>
+                </div>
+                <div class="sb-modal-c__caption _letter">
+                  Выберите язык:
+                </div>
+                <div class="sb-modal-selr _sb">
+                  <span class="sb-modal-selr__selected _lang">Русский</span>
+                  <select class="js-- sb-modal-selr__select _lang">
+                    <option class="sb-modal-selr__option" value="ru">Русский</option>
+                    <option class="sb-modal-selr__option" value="ua">Украинский</option>
+                    <option class="sb-modal-selr__option" value="md">Молдавский</option>
+                  </select>
+                </div>
+              </div>
+              <div class="js-- sb-modal__close"></div>
+            </div>
+          </div>
+
+          <!-- user -->
+
+          <div class="sb-item _fix-none">
+            <div class="js-- sb-item__button" title="Пользователь">
+              <i class="sb-item__icon _user"></i>
+            </div>
+            <div class="sb-modal _center _user">
+
+              <!-- enter -->
+
+              <input id="modal-radio-enter" class="sb-modal__radio" type="radio" name="user" checked>
+              <div class="sb-modal-container">
+                <div class="sb-modal-c__caption _login">
+                  Войти
+                </div>
+                <div class="sb-modal-c__info">
+                  Логин или пароль неверны!
+                </div>
+
+                <form class="sb-modal-form _user" action="#">
+                  <input class="sb-modal__input _login _error" type="email" placeholder="Логин" required>
+                  <div class="sb-modal__password-block _error">
+                    <input class="sb-modal__input _password" type="password" placeholder="Пароль" required>
+                    <input class="js-- sb-modal__input _show" type="button" value="show">
+                  </div>
+                  <label class="sb-modal-c__remember"><input class="sb-modal-c__checkbox" type="checkbox" checked><i class="sb-modal-c__icon"></i> Запомнить меня</label>
+                  <input class="sb-modal-c__button _login" type="submit" value="Войти">
+                </form>
+                <div class="sb-modal-soc">
+                  <label for="modal-radio-avt" class="sb-modal-soc__link"><i class="sb-modal-soc__icon _vk"></i></label>
+                  <label for="modal-radio-avt" class="sb-modal-soc__link"><i class="sb-modal-soc__icon _ya"></i></label>
+                  <label for="modal-radio-avt" class="sb-modal-soc__link"><i class="sb-modal-soc__icon _fb"></i></label>
+                  <label for="modal-radio-avt" class="sb-modal-soc__link"><i class="sb-modal-soc__icon _ok"></i></label>
+                  <label for="modal-radio-avt" class="sb-modal-soc__link"><i class="sb-modal-soc__icon _gp"></i></label>
+                </div>
+                <hr class="sb-modal-c__line">
+                <label for="modal-radio-reestablish" class="sb-modal-c__forgot">Забыли пароль?</label>
+                <div class="sb-modal-c__caption _last">
+                  Торговая площадка &laquo;Зона Шопинга&raquo;
+                </div>
+                <hr class="sb-modal-c__line">
+                <label class="sb-modal-c__link _avt" for="modal-radio-email">Регистрация</label>
+              </div>
+
+              <!-- email -->
+
+              <input id="modal-radio-email" class="sb-modal__radio" type="radio" name="user">
+              <div class="sb-modal-container">
+                <div class="sb-modal-c__caption _login">
+                  Регистрация по E-mail
+                </div>
+                <form class="sb-modal-form _user" action="#">
+                  <input class="sb-modal__input _login" type="email" placeholder="E-mail" required>
+                  <div class="sb-modal__password-block">
+                    <input class="sb-modal__input _password" type="password" placeholder="Пароль" required>
+                    <input class="js-- sb-modal__input _show" type="button" value="show">
+                  </div>
+                  <input class="sb-modal-c__button _register" type="submit" value="Зарегистрироваться">
+                </form>
+                <div class="sb-modal-c__comment _register">
+                  Нажимая на кнопку &laquo;Зарегистрироваться&raquo;, я соглашаюсь с условиями Публичной оферты и Правилами сайта.
+                </div>
+                <hr class="sb-modal-c__line">
+                <div class="sb-modal-c__caption _login">
+                  Упрощенная регистрация
+                </div>
+                <div class="sb-modal-soc">
+                  <label for="modal-radio-avt" class="sb-modal-soc__link"><i class="sb-modal-soc__icon _vk"></i></label>
+                  <label for="modal-radio-avt" class="sb-modal-soc__link"><i class="sb-modal-soc__icon _ya"></i></label>
+                  <label for="modal-radio-avt" class="sb-modal-soc__link"><i class="sb-modal-soc__icon _fb"></i></label>
+                  <label for="modal-radio-avt" class="sb-modal-soc__link"><i class="sb-modal-soc__icon _ok"></i></label>
+                  <label for="modal-radio-avt" class="sb-modal-soc__link"><i class="sb-modal-soc__icon _gp"></i></label>
+                </div>
+                <hr class="sb-modal-c__line">
+                <label for="modal-radio-enter" class="sb-modal-c__forgot">Уже зарегистрированы?</label>
+                <hr class="sb-modal-c__line">
+                <label class="sb-modal-c__link _avt" for="modal-radio-tel">Регистрация через телефон</label>
+              </div>
+
+              <!-- tel -->
+
+              <input id="modal-radio-tel" class="sb-modal__radio" type="radio" name="user">
+              <div class="sb-modal-container">
+                <div class="sb-modal-c__caption _login">
+                  Регистрация через телефон
+                </div>
+                <form class="sb-modal-form _user" action="#">
+                  <div class="sb-modal-selr _sb _tel">
+                    <span class="sb-modal-selr__selected _tel">+373</span>
+                    <select class="js-- sb-modal-selr__select _tel">
+                      <option class="sb-modal-selr__option">+373</option>
+                      <option class="sb-modal-selr__option">+7</option>
+                      <option class="sb-modal-selr__option">+8</option>
+                    </select>
+                  </div>
+                  <input class="sb-modal__input _tel" type="text" placeholder="(___) ___-__-__" required>
+                  <script>
+                    $(function() {
+                      $(".sb-modal__input _tel").mask("(999) 999-99-99");
+                    });
+                  </script>
+                  <div class="sb-modal__password-block">
+                    <input class="sb-modal__input _password" type="password" placeholder="Придумайте пароль" required>
+                    <input class="js-- sb-modal__input _show" type="button" value="show">
+                  </div>
+                  <input class="sb-modal-c__button _register" type="submit" value="Выслать код подтверждения">
+                </form>
+                <div class="sb-modal-c__comment _register">
+                  Нажимая на кнопку &laquo;Выслать код&raquo;, я соглашаюсь с условиями Публичной оферты и Правилами сайта.
+                </div>
+                <hr class="sb-modal-c__line">
+                <div class="sb-modal-c__caption _sms">
+                  Введите код полученный в SMS
+                </div>
+                <input id="sb-phone" class="sb-modal__input _sms" type="text">
+                <input class="sb-modal-c__button _register" type="button" value="Подтвердить">
+                <hr class="sb-modal-c__line">
+                <label class="sb-modal-c__link _avt" for="modal-radio-email">Регистрация через E-mail</label>
+              </div>
+
+              <!-- avt -->
+
+              <input id="modal-radio-avt" class="sb-modal__radio" type="radio" name="user">
+              <div class="sb-modal-container">
+                <a class="sb-modal-c__link _user" href="#">Brombuss</a>
+                <div class="sb-modal-c__caption _big _score" data-content="150" data-currency="&#8381;">
+                  На Вашем счету
+                </div>
+                <hr class="sb-modal-c__line">
+                <a class="sb-modal-c__link _room" href="#">Настройки</a>
+                <a class="sb-modal-c__link _room" href="#">Личный кабинет</a>
+                <a class="sb-modal-c__link _room" href="#">Мой магазин</a>
+                <hr class="sb-modal-c__line">
+                <label class="sb-modal-c__caption _big" for="modal-radio-enter">
+                  Выйти
+                </label>
+              </div>
+
+              <!-- reest -->
+
+              <input id="modal-radio-reestablish" class="sb-modal__radio" type="radio" name="user">
+              <div class="sb-modal-container">
+                <div class="sb-modal-c__caption _login">
+                  Восстановление пароля
+                </div>
+                <form class="sb-modal-form _user" action="#">
+                  <input class="sb-modal__input _login" type="email" placeholder="E-mail" required>
+                  <div class="sb-modal-selr _sb _tel">
+                    <span class="sb-modal-selr__selected _tel">+373</span>
+                    <select class="js-- sb-modal-selr__select _tel">
+                      <option class="sb-modal-selr__option">+373</option>
+                      <option class="sb-modal-selr__option">+7</option>
+                      <option class="sb-modal-selr__option">+8</option>
+                    </select>
+                  </div>
+                  <input class="sb-modal__input _tel" type="text" placeholder="(___) ___-__-__" required>
+                  <script>
+                    $(function() {
+                      $(".sb-modal__input _tel").mask("(999) 999-99-99");
+                    });
+                  </script>
+                  <input class="sb-modal-c__button _register" type="submit" value="Восстановить">
+                </form>
+                <hr class="sb-modal-c__line">
+                <a class="sb-modal-c__forgot" href="#">Техническая поддержка</a>
+              </div>
+
+
+              <div class="js-- sb-modal__close"></div>
+            </div>
+          </div>
+
+          <!-- scroll-top -->
+
+          <div class="sb-item _top-r _fix-none">
+            <div class="js-- sb-item__button-t" title="Вверх">
+              <i class="sb-item__icon _top"></i>
+            </div>
+          </div>
+
+          <!-- filter-button-->
+
+          <div class="sb-item _filter">
+            <div class="js-- sb-item__button _filter" title="Фильтры">
+              <i class="sb-item__icon _filter"></i>
+            </div>
+          </div>
+
+        </aside>
+        <div class="header-sb-bg"></div>
+        <!-- end sb -->
+
+      </header>
+
+      <!-- NAVIGATING -->
+
+      <nav class="nav">
+        <ul class="top-menu _sub">
+          <li class="top-menu__item _first">
+            <div class="js-- top-menu__link _first _back" title="Категории товаров">платья</div>
+
+            <div class="js-- top-menu-c">
+
+              <ul class="top-menu-list _tl _sub">
+
+                <li class="top-menu-list__item">
+                  <a href="catalog.html" class="top-menu-list__link">Мужчинам</a>
+                </li>
+                <li class="top-menu-list__item">
+                  <div class="js-- top-menu-list__btn">Женщинам</div>
+
+                  <ul class="top-menu-list _a _sub">
+
+                    <li class="top-menu-list__item">
+                      <div class="js-- top-menu-list__btn">Одежда</div>
+
+                      <ul class="top-menu-list _a _sub">
+
+                        <li class="top-menu-list__item">
+                          <div class="js-- top-menu-list__btn">Платья</div>
+
+                          <ul class="top-menu-list _a">
+                            <li class="top-menu-list__item"><a href="catalog.html" class="top-menu-list__link">Вечерние платья</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Трикотажные платья</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Джинсовые платья</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Коктейльные платья</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Летние платья</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Офисные платья</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Платья-миди</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Платья-макси</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Платья-мини</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Пляжные платья и туники</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Повседневные платья</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Сарафаны</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Свадебные платья</a></li>
+                            <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Спортивные платья</a></li>
+                          </ul>
+
+                        </li>
+                        <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Куртки</a></li>
+                      </ul>
+
+                    </li>
+                    <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Обувь</a></li>
+                    <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Чепчики</a></li>
+                  </ul>
+
+                </li>
+                <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Детям</a></li>
+                <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Красота и здоровье</a></li>
+                <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Часы и украшения</a></li>
+                <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Электроника</a></li>
+                <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Спорт и развлечения</a></li>
+                <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Дом и сад</a></li>
+                <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Музыка и книги</a></li>
+                <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Товары для животных</a></li>
+                <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Подарки и сувениры</a></li>
+                <li class="top-menu-list__item"><a href="#" class="top-menu-list__link">Автотовары</a></li>
+                <li class="top-menu-list__item _active"><a href="#" class="top-menu-list__link">Все категории</a></li>
+
+              </ul>
+
+            </div>
+
+          </li>
+          <li class="top-menu__item _bn"><a href="#" class="top-menu__link">Гид покупателя</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Создать магазин</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Оплата</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Доставка</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">Защита покупателей</a></li>
+          <li class="top-menu__item"><a href="#" class="top-menu__link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- MAIN -->
+
+      <main class="main _catalog">
+
+        <!-- FILTER-GOODS -->
+
+        <aside class="filter-goods">
+
+          <div class="js-- lm-colum"></div>
+
+          <div class="filter-buttons">
+            <div class="js-- filter-buttons__apply">Применить</div>
+            <div class="js-- filter-buttons__reset">Фильтры</div>
+            <div class="js-- filter-buttons__i-reset" title="Сбросить фильтры">
+              <i class="filter-buttons__icon"></i>
+            </div>
+          </div>
+
+          <div class="sb-modal-selr _filter">
+            <span class="sb-modal-selr__selected _filter">Сортировать</span>
+            <select class="js-- sb-modal-selr__select _filter">
+              <option class="sb-modal-selr__option">новые</option>
+              <option class="sb-modal-selr__option">старые</option>
+              <option class="sb-modal-selr__option">популярные</option>
+            </select>
+          </div>
+
+          <div class="filter-spoiler">
+            <div class="js-- filter-spoiler__name">
+              Цена
+              <ul class="filter-spoiler-s">
+              </ul>
+            </div>
+            <div class="filter-spoiler-c">
+              <div class="filter-price">
+                <input class="js-- filter-price__number _min" type="text" value="0"> &ndash;
+                <input class="js-- filter-price__number _max" type="text" value="250000"><span class="filter-price__currency">руб.</span>
+                <div class="filter-price-range">
+                  <div class="filter-price-range__l-box">
+                    <div class="js-- filter-price-range__l _min"></div>
+                    <div class="js-- filter-price-range__l _max"></div>
+                  </div>
+                  <div class="js-- filter-price-range__r-box _min">
+                    <input class="js-- filter-price-range__r _min" type="range" step="100" min="0" max="250000" value="0">
+                  </div>
+                  <div class="filter-price-range__r-box _max">
+                    <input class="js-- filter-price-range__r _max" type="range" step="100" min="0" max="250000" value="250000">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-spoiler">
+            <div class="js-- filter-spoiler__name">
+              Производитель
+              <ul class="filter-spoiler-s">
+              </ul>
+            </div>
+            <div class="filter-spoiler-c">
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Гучик</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Джовани</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Фердинандо</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Жюклинс</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Подвальонс</label>
+            </div>
+          </div>
+
+          <div class="filter-spoiler">
+            <div class="js-- filter-spoiler__name">
+              Размер
+              <ul class="filter-spoiler-s">
+              </ul>
+            </div>
+            <div class="filter-spoiler-c">
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">38</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">39</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">40</label>
+            </div>
+          </div>
+
+          <div class="filter-spoiler">
+            <div class="js-- filter-spoiler__name">
+              Цвет
+              <ul class="filter-spoiler-s">
+              </ul>
+            </div>
+            <div class="filter-spoiler-c">
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Красный</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Зеленый</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Синий</label>
+            </div>
+          </div>
+
+          <div class="filter-spoiler">
+            <div class="js-- filter-spoiler__name">
+              Состав
+              <ul class="filter-spoiler-s">
+              </ul>
+            </div>
+            <div class="filter-spoiler-c">
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Хлопок</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Синтетика</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Льон</label>
+            </div>
+          </div>
+
+          <div class="filter-spoiler">
+            <div class="js-- filter-spoiler__name">
+              Доставка
+              <ul class="filter-spoiler-s">
+              </ul>
+            </div>
+            <div class="filter-spoiler-c">
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Россия</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Украина</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">Молдавия</label>
+            </div>
+          </div>
+
+          <div class="filter-spoiler">
+            <div class="js-- filter-spoiler__name">
+              Рейтинг магазина
+              <ul class="filter-spoiler-s">
+              </ul>
+            </div>
+            <div class="filter-spoiler-c">
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">1</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">2</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">3</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">4</label>
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">5</label>
+            </div>
+          </div>
+
+          <div class="filter-spoiler">
+            <div class="js-- filter-spoiler__name">
+              Параметры
+              <ul class="filter-spoiler-s">
+              </ul>
+            </div>
+            <div class="filter-spoiler-c">
+              <label class="filter-spoiler-c__item"><input class="filter-spoiler-c__check" type="checkbox">В коробке</label>
+            </div>
+          </div>
+
+          <div class="filter-advertising">
+            <a class="filter-advertising__link" href="#">
+              <img class="filter-advertising__img" src="img/filter-advertising.jpg" alt="Реклама">
+            </a>
+          </div>
+          <div class="filter-advertising">
+            <a class="filter-advertising__link" href="#">
+              <img class="filter-advertising__img" src="img/filter-advertising.jpg" alt="Реклама">
+            </a>
+          </div>
+          <div class="filter-advertising">
+            <a class="filter-advertising__link" href="#">
+              <img class="filter-advertising__img" src="img/filter-advertising.jpg" alt="Реклама">
+            </a>
+          </div>
+          <div class="filter-advertising">
+            <a class="filter-advertising__link" href="#">
+              <img class="filter-advertising__img" src="img/filter-advertising.jpg" alt="Реклама">
+            </a>
+          </div>
+          <div class="filter-advertising">
+            <a class="filter-advertising__link" href="#">
+              <img class="filter-advertising__img" src="img/filter-advertising.jpg" alt="Реклама">
+            </a>
+          </div>
+        </aside>
+
+        <!-- CATALOG-GOODS -->
+
+        <section class="goods-box-c">
+          <div class="breadcrumbs">
+            <a class="breadcrumbs__link" href="#">Женщинам</a>
+            <a class="breadcrumbs__link" href="#">Одежда</a>
+            <a class="breadcrumbs__link" href="#">Платья</a>
+            <h2 class="breadcrumbs__link _this">Вечерние платья</h2>
+            <div class="breadcrumbs__quantity">457</div>
+            <div class="sb-modal-selr _b">
+              <span class="sb-modal-selr__selected _b">новые</span>
+              <select class="js-- sb-modal-selr__select _b">
+                <option class="sb-modal-selr__option">новые</option>
+                <option class="sb-modal-selr__option">старые</option>
+                <option class="sb-modal-selr__option">популярные</option>
+              </select>
+            </div>
+          </div>
+          <article class="goods-section">
+            <h3 class="goods-section__caption _c _mob">Вечерние платья</h3>
+            <div class="goods-catalog">
+              <div class="goods-catalog__item _two">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <img class="goods-catalog__img-adv" src="img/goods-adv1.jpg" alt="Платье">
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods1.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods2.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods3.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods4.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item _two">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <img class="goods-catalog__img-adv" src="img/goods-adv2.jpg" alt="Платье">
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods1.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods2.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods3.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods4.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item _two">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <img class="goods-catalog__img-adv" src="img/goods-adv1.jpg" alt="Платье">
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods3.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods4.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods1.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods2.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item _two">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <img class="goods-catalog__img-adv" src="img/goods-adv2.jpg" alt="Платье">
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods1.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods2.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods3.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods4.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+            </div>
+            <div class="goods-catalog">
+              <div class="goods-catalog__item _two">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <img class="goods-catalog__img-adv" src="img/goods-adv1.jpg" alt="Платье">
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods3.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods4.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods1.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods2.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item _two">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <img class="goods-catalog__img-adv" src="img/goods-adv2.jpg" alt="Платье">
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods1.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods2.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods3.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods4.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods1.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods2.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods3.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods4.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods1.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods2.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods3.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods4.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods1.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods2.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods3.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+              <div class="goods-catalog__item">
+
+                <a class="goods-catalog__link" href="#">
+                  <figure>
+                    <div class="goods-catalog__box-img">
+                      <img class="goods-catalog__img" src="img/goods4.png" alt="Платье">
+                    </div>
+                    <div class="goods-catalog__price">
+                      2&nbsp;347
+                    </div>
+                    <figcaption class="goods-catalog__name">
+                      Платье вечернее
+                    </figcaption>
+                  </figure>
+                </a>
+
+              </div>
+            </div>
+
+            <aside class="goods-pages">
+              <ul class="goods-p-list">
+                <li class="goods-p-list__item">
+                  <div class="goods-p-list__btn" title="В начало">
+                    <i class="goods-p-list__icon _start"></i>
+                  </div>
+                </li>
+                <li class="goods-p-list__item">
+                  <div class="goods-p-list__btn" title="Предыдущая страница">
+                    <i class="goods-p-list__icon _prev"></i>
+                  </div>
+                </li>
+                <li class="goods-p-list__item _l">
+                  <a class="goods-p-list__link _start" href="#">1</a>
+                  <a class="goods-p-list__link" href="#">2</a>
+                  <a class="goods-p-list__link" href="#">3</a>
+                  <a class="goods-p-list__link" href="#">4</a>
+                  <a class="goods-p-list__link _this" href="#">5</a>
+                  <a class="goods-p-list__link" href="#">6</a>
+                  <a class="goods-p-list__link" href="#">7</a>
+                  <a class="goods-p-list__link" href="#">8</a>
+                  <a class="goods-p-list__link _fin" href="#">54</a>
+                </li>
+                <li class="goods-p-list__item">
+                  <div class="goods-p-list__btn" title="Следующая страница">
+                    <i class="goods-p-list__icon _next"></i>
+                  </div>
+                </li>
+                <li class="goods-p-list__item">
+                  <div class="goods-p-list__btn" title="В конец">
+                    <i class="goods-p-list__icon _fin"></i>
+                  </div>
+                </li>
+                <li class="goods-p-list__item">
+                  <input class="goods-p-list__input" type="text" placeholder="&hellip;" title="Введите номер страницы">
+                </li>
+              </ul>
+            </aside>
+          </article>
+
+        </section>
+
+      </main>
+    </div>
+    <!-- END CONTAINER -->
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="container _f">
+        <div class="footer-col _first">
+          <div class="footer-logo">
+            <a class="footer-logo__link" href="index.html" title="Торговый центр Зона Шопинга">
+              <img class="footer-logo__img" src="img/zs.png" alt="Торговый центр Зона Шопинга">
+            </a>
+          </div>
+          <ul class="footer-help">
+            <li class="footer-help__item">
+              <a class="footer-help__link" href="#">Отдел рекламы</a>
+            </li>
+            <li class="footer-help__item">
+              <a class="footer-help__link" href="#">Техническая поддержка</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col _categories">
+          <ul class="footer-menu-categories">
+            <li class="footer-menu-categories__item _first"><a href="#" class="footer-menu-categories__link _first">КАТЕГОРИИ ТОВАРА</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Мужчинам</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Женщинам</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Детям</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Красота и здоровье</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Часы и украшения</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Электроника</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Спорт и развлечения</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Дом и сад</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Музыка и книги</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Товары для животных</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Подарки и сувениры</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Автотовары</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Все категории</a></li>
+          </ul>
+        </div>
+        <div class="footer-col _inform">
+          <ul class="footer-menu-categories">
+            <li class="footer-menu-categories__item _first"><a href="#" class="footer-menu-categories__link _first">ИНФОРМЕР</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Гид покупателя</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Создать магазин</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Оплата</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Доставка</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Защита покупателя</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">FAQ</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">О проекте</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Правила</a></li>
+            <li class="footer-menu-categories__item"><a href="#" class="footer-menu-categories__link">Вакансии</a></li>
+          </ul>
+        </div>
+        <aside class="footer-col _widget">
+          <div class="footer-col-box _widget">
+            <div class="footer-join">
+              <span class="footer-join__text">ПРИСОЕДИНЯЙТЕСЬ</span>
+              <div class="footer-join-soc">
+                <i class="footer-join-soc__icon _fb"></i>
+                <i class="footer-join-soc__icon _gp"></i>
+                <i class="footer-join-soc__icon _vk"></i>
+                <i class="footer-join-soc__icon _ya"></i>
+              </div>
+            </div>
+            <div class="footer-subscription">
+              <span class="footer-subscription__text">ПОДПИСКА НА НОВОСТИ</span>
+              <form class="footer-subscription-form" action="#">
+                <input class="footer-subscription-form__email" type="email" placeholder="E-mail" required>
+                <input class="footer-subscription-form__button" type="submit" value="ПОДПИСАТЬСЯ">
+              </form>
+            </div>
+            <div class="footer-settings">
+              <span class="footer-settings__text">НАСТРОЙКИ</span>
+              <div class="footer-settings-block">
+
+                <div class="block-selr _left">
+                  <span class="block-selr__selected _lang"><i class="block-selr__icon _ru"></i></span>
+                  <select class="js-- block-selr__select _lang">
+                    <option class="block-selr__option" value="ru">рус.</option>
+                    <option class="block-selr__option" value="ua">укр.</option>
+                    <option class="block-selr__option" value="md">молд.</option>
+                </select>
+                </div>
+                <div class="block-selr _currency">
+                  <span class="block-selr__selected _currency">&#8381;</span>
+                  <select class="js-- block-selr__select _currency">
+                    <option class="block-selr__option" value="&#8381;">&#8381; RUB</option>
+                    <option class="block-selr__option" value="&#36;">&#36; USD</option>
+                    <option class="block-selr__option" value="&#8364;">&#8364; EUR</option>
+                    <option class="block-selr__option" value="&#8372;">&#8372; UAN</option>
+                  <option class="block-selr__option" value="R">RUP PMR</option>
+                  <option class="block-selr__option" value="L">L MDL</option>
+                </select>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <span class="footer__text _max">
+        &copy; Все права защищены. Информация сайта защищена законом об авторских правах.
+      </span>
+      <span class="footer__text _min">
+        &copy; Zone Shoping. Все права защищены.
+      </span>
+    </footer>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
